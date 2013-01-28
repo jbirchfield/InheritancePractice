@@ -21,11 +21,27 @@ public class SalariedEmployee extends Employee {
         this.wklySalary = wklySalary;
     }
     
+    
+    public void setEmpNumber(int empNumber) {
+        this.empNumber = empNumber;
+    }
+    
     public int getEmpNumber() {
         return empNumber;
     }
+    
+    public void setEmpDept(String empDept) {
+        this.empDept = empDept;
+    }
     public String getEmpDept() {
         return empDept;
+    }
+    public String getEmpFName() {
+        return empFName;
+    }
+    
+    public String getEmpLName() {
+        return empLName;
     }
     
 }
