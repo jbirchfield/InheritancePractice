@@ -1,16 +1,21 @@
-package myinterface;
+package myabstract;
 
 /**
  * @author james birchfield
  */
- public class HourlyEmployee implements Employee{
+public class HourlyEmployee extends Employee {
     private int hoursWorked;                    //number of hours worked
     private double hourlyRate;                  //dollars per hour paid
     private double hourlySalary;                //amount earned this pay period
     private int empNumber;
     private String empDept;
-    private String empFName;
-    private String empLName;
+    
+    
+    //The constructor accepts as arguments the employee first and last name
+    public HourlyEmployee(String fnam, String lnam)
+    {
+        super(fnam, lnam);
+    }
     
     public int getHoursWorked() {
         return hoursWorked;
@@ -33,21 +38,13 @@ package myinterface;
     {
         return hourlySalary = rate * hours;
     }
-    
+        
     public int getEmpNumber() {
         return empNumber;
     }
     
     public String getEmpDept() {
         return empDept;
-    }
-    
-    public String getEmpFName() {
-        return empFName;
-    }
-    
-    public String getEmpLName() {
-        return empLName;
     }
     
 }
