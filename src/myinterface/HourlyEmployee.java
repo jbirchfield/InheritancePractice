@@ -34,18 +34,34 @@ package myinterface;
         return hourlySalary = rate * hours;
     }
     
+    public void setEmpNumber(int empNumber) {
+        this.empNumber = empNumber;
+    }
+    
     public int getEmpNumber() {
         return empNumber;
+    }
+    
+    public void setEmpDept(String empDept) {
+        this.empDept = empDept;
     }
     
     public String getEmpDept() {
         return empDept;
     }
     
+    public void setEmpFName(String empFName) {
+        this.empFName = empFName;
+    }
+
     public String getEmpFName() {
         return empFName;
     }
     
+    public void setEmpLName(String empLName) {
+        this.empLName = empLName;
+    }
+
     public String getEmpLName() {
         return empLName;
     }
